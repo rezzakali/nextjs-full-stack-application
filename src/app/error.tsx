@@ -1,22 +1,22 @@
 'use client';
 
-import { useEffect } from 'react';
+import { Button, Typography } from '@/components/MTComponents/MTComponents';
 
-export default function Error({
+const Error = ({
   error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
-}) {
-  useEffect(() => {
-    console.error(error);
-  }, [error]);
-
+}) => {
   return (
-    <div>
-      <h2>Something went wrong!</h2>
-      <button onClick={() => reset()}>Try again</button>
+    <div className="flex flex-col items-center justify-center h-[100vh]">
+      <Typography>Something went wrong!</Typography>
+      <Button variant="text" onClick={() => reset()}>
+        Try again
+      </Button>
     </div>
   );
-}
+};
+
+export default Error;
