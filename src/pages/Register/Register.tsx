@@ -28,16 +28,15 @@ const Register = () => {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const { name, email, password } = user || {};
+    if (!name || !email || !password) {
+      toast.warning('Empty field is required!');
+    }
     setLoading(true);
     try {
-      const res = await axios.post(`/api/users/register`, {
-        name,
-        email,
-        password,
-      });
+      const res = await axios.post(`/api/users/register`, user);
       setLoading(false);
       toast.success(res?.data?.message);
-      router.push('/');
+      router.push('/login');
     } catch (error: any) {
       setLoading(false);
       toast.error(error?.response?.data?.message);
@@ -103,7 +102,7 @@ const Register = () => {
             containerProps={{ className: '-ml-2.5' }}
           />
 
-          <Button type="submit" className="mt-6" fullWidth>
+          <Button type="submit" className="mt-6" fullWidth disabled={loading}>
             {loading ? (
               <div className="flex items-center justify-center">
                 <Spinner className="h-3 w-3 mx-2" /> Registering...

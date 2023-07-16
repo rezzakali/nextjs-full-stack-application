@@ -1,7 +1,6 @@
 import dbConnect from '@/dbConfig/dbConfig';
 import User from '@/models/userModel';
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
@@ -43,28 +42,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!process.env.JWT_SECRET) {
-      throw new Error('JWT_SECRET environment variable is not set!');
-    }
-
-    // Generate a token using user's email as the payload
-    const token = jwt.sign({ email }, process.env.JWT_SECRET, {
-      expiresIn: '7d', // Token expiration time (adjust as needed)
-    });
-
-    // new user
+    // new user create
     const newUser = await new User({
       name,
       email,
       password: hashedPassword,
-      token,
     });
 
     // save the user to db
     await newUser.save();
 
     // Send the response with the token
-    return NextResponse.json({ message: 'User created successfully', token });
+    return NextResponse.json({ message: 'User created successfully' });
   } catch (error) {
     return NextResponse.json(
       { error: (error as Error).message },

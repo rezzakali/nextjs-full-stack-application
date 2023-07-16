@@ -31,11 +31,6 @@ const userSchema = new Schema({
     default: false,
   },
 
-  token: {
-    type: String,
-    required: true,
-  },
-
   date: {
     type: Date,
     default: Date.now,
