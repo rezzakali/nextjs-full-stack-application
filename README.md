@@ -1,14 +1,14 @@
-# Your Application Name
+# Next.js ( Full Stack Application ) || Authentication Implementation
 
-A full-stack web application built with Next.js 13.
+A full-stack web application built with Next.js 13.4
 
 ## Description
 
-Provide a brief description of your application, its purpose, and any key features.
+A full stack web application with nextjs 13.4. where I try to implement all features like register,login,logout and authentication in nextjs api route hashing password, jsonwebtoken (jwt) implement and more .I mainly focused on nextjs
 
 ## Technologies Used
 
-- Next.js 13
+- Next.js 13.4
 - React 18
 - MongoDB (via Mongoose)
 - Tailwind CSS 3
@@ -18,6 +18,7 @@ Provide a brief description of your application, its purpose, and any key featur
 - Bcrypt
 - React Toastify
 - Material Tailwind (Components library for Tailwind CSS and Material Design.)
+- axios
 
 ## Installation
 

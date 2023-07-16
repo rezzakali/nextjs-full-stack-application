@@ -61,7 +61,7 @@ const Login = () => {
         >
           <div className="mb-4 flex flex-col gap-6">
             <Input
-              size="lg"
+              size="md"
               label="Email"
               name="email"
               value={user.email}
@@ -70,7 +70,7 @@ const Login = () => {
             />
             <Input
               type="password"
-              size="lg"
+              size="md"
               name="password"
               label="Password"
               value={user.password}
