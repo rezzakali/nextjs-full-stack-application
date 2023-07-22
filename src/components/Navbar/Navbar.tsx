@@ -29,8 +29,8 @@ const Nav = () => {
     try {
       const res = await axios.get('/api/users/logout');
       if (res.status === 200) {
-        toast.success(res?.data?.message);
         router.push('/login');
+        toast.success(res?.data?.message);
       }
     } catch (error: any) {
       toast.error(error?.response?.data?.message);
