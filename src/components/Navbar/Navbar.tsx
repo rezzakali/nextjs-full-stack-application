@@ -46,7 +46,7 @@ const Nav = () => {
         className="p-1 font-normal"
       >
         <Link href="/about" className="flex items-center">
-          Login
+          About
         </Link>
       </Typography>
       <Typography
@@ -56,7 +56,7 @@ const Nav = () => {
         className="p-1 font-normal"
       >
         <Link href="/contact" className="flex items-center">
-          Register
+          Contact
         </Link>
       </Typography>
     </ul>
