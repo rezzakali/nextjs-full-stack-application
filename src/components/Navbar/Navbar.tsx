@@ -63,7 +63,7 @@ const Nav = () => {
   );
 
   return (
-    <Navbar className="mx-auto">
+    <Navbar className="mx-auto shadow-sm w-full sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"

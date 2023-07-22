@@ -14,7 +14,6 @@ A full stack web application with nextjs 13.4. where I try to implement all feat
 - Tailwind CSS 3
 - TypeScript 5
 - JWT (jsonwebtoken)
-- Nodemailer
 - Bcrypt
 - React Toastify
 - Material Tailwind (Components library for Tailwind CSS and Material Design.)
@@ -22,8 +21,17 @@ A full stack web application with nextjs 13.4. where I try to implement all feat
 
 ## Installation
 
-1. Clone the repository: `git clone <repository-url>`
-2. Install dependencies: `npm install`
+1. Clone the repository:
+
+```bash
+git clone https://github.com/rezzakali/nextjs-full-stack-application.git
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
 
 ## Configuration
 
@@ -39,24 +47,40 @@ A full stack web application with nextjs 13.4. where I try to implement all feat
 
 Explain the organization of your project's folders and files. Here's a suggested structure:
 
+- `/src` root the of the whole
 - `/components`: Contains reusable React components.
 - `/pages`: Contains Next.js pages.
 - `/api`: Contains API routes and server-side code.
 - `/models`: Contains Mongoose models for MongoDB.
 - `/utils`: Contains utility functions and helper files.
+- `/dbConfig` database connection
 
 ## Contributing
 
-Provide guidelines for contributors who want to participate in the development of your application.
+We welcome and encourage contributions to our application from anyone who is interested in participating in its development. To make the process as simple as possible, here are five guidelines for contributors:
 
-## License
+1. **Familiarize Yourself with the Project**: Before contributing, take some time to understand the application's purpose, functionality, and existing codebase. Review the project's documentation and familiarize yourself with the development environment.
 
-Specify the license under which your application is distributed.
+2. **Create Clear and Concise Issues**: If you encounter a bug, have an idea for a new feature, or want to suggest an improvement, create a clear and concise issue in the project's issue tracker. Include as much detail as possible, such as steps to reproduce the bug or a detailed explanation of the proposed feature.
+
+3. **Follow Coding Guidelines**: Consistency in coding style is essential for maintaining a clean and readable codebase. Make sure to follow the project's coding guidelines and adhere to any established coding standards. If there are no guidelines, try to match the existing coding style.
+
+4. **Test Your Changes Thoroughly**: Before submitting a pull request, thoroughly test your changes to ensure they work as intended and do not introduce new issues. Include relevant unit tests if applicable, and verify that existing tests pass successfully.
+
+5. **Submit Pull Requests**: When you are ready to contribute, submit a pull request with a clear description of the changes you've made. Reference the related issue if applicable. Be open to feedback and iterate on your work if necessary.
 
 ## Acknowledgements
 
-If you used any external resources or libraries, acknowledge them here.
+We would like to express our sincere gratitude to the following individuals and projects for their contributions to this application:
 
 ## Contact
 
-Provide your contact information so that users and contributors can reach out to you for support or inquiries.
+If you have any questions, need support, or want to get involved in the development of this project, feel free to reach out to us:
+
+#### Email: rezzak.dev@gmail.com
+
+#### GitHub: https://github.com/rezzakali/
+
+#### LinkedIn: https://www.linkedin.com/in/rezzak
+
+We welcome feedback, bug reports, feature requests, and contributions from the community. Don't hesitate to contact us; we'll be happy to hear from you!
