@@ -72,7 +72,7 @@ const Nav = () => {
         >
           NT
         </Typography>
-        <div className="hidden lg:block">{navList}</div>
+        <div className="hidden lg:block"></div>
         <Button
           variant="gradient"
           size="sm"
