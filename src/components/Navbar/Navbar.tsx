@@ -45,7 +45,7 @@ const Nav = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link href="/login" className="flex items-center">
+        <Link href="/about" className="flex items-center">
           Login
         </Link>
       </Typography>
@@ -55,7 +55,7 @@ const Nav = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link href="/register" className="flex items-center">
+        <Link href="/contact" className="flex items-center">
           Register
         </Link>
       </Typography>
@@ -72,7 +72,7 @@ const Nav = () => {
         >
           NT
         </Typography>
-        <div className="hidden lg:block"></div>
+        <div className="hidden lg:block">{navList}</div>
         <Button
           variant="gradient"
           size="sm"
