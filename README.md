@@ -83,4 +83,6 @@ If you have any questions, need support, or want to get involved in the developm
 
 #### LinkedIn: https://www.linkedin.com/in/rezzak
 
+#### Portfolio: https://rezzak.vercel.app
+
 We welcome feedback, bug reports, feature requests, and contributions from the community. Don't hesitate to contact us; we'll be happy to hear from you!
