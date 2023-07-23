@@ -1,5 +1,16 @@
 # Next.js ( Full Stack Application ) || Authentication Implementation
 
+![Next.js](https://img.shields.io/badge/Next.js-13.4-blueviolet)
+![React](https://img.shields.io/badge/React-18-blue)
+![MongoDB](https://img.shields.io/badge/MongoDB-via%20Mongoose-green)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-brightgreen)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![JWT](https://img.shields.io/badge/JWT-jsonwebtoken-red)
+![Bcrypt](https://img.shields.io/badge/Bcrypt-5-blue)
+![React Toastify](https://img.shields.io/badge/React%20Toastify-latest-yellow)
+![Material Tailwind](https://img.shields.io/badge/Material%20Tailwind-latest-yellow)
+
+
 A full-stack web application built with Next.js 13.4
 
 ## Description
